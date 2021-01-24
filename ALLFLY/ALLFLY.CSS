@@ -1,0 +1,85 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslategray;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.flip-logo {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.flip-logo:hover {
+  transform: rotateX(-90deg);
+}
+
+.front {
+  height: 100px;
+  transform: translateZ(140px);
+}
+
+.back {
+  height: 100px;
+  transform: rotateX(90deg) translateZ(150px);
+}
+
+.material-icons {
+  font-size: 12rem;
+  margin-bottom: 20px;
+}
+
+.large-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.small-text {
+  font-size: 1.5rem;
+}
+
+#dynamic {
+  position: relative;
+  display: inline-block;
+}
+
+#dynamic::after {
+  /* after : p태그가 끝나기 전에 생기는 가상요소를 뜻한다. */
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  /* position 속성으로 항상 글 오른쪽에 위치하도록 설정했다. (42, 43, 44) */
+  width: 4px;
+  /* bar 의 폭을 4px로 지정 */
+  height: 100%;
+  /* bar 의 높이를 p태그의 높이만큼 설정해줬다. */
+  background-color: #fff;
+  /* 현재 마우스 커서가 글이 짧아지게 되면 바로옆에 붙는 것이 아니 p속성 블록의 끝에 항상 맞추어 진다
+    이것은 부모태그인 <div>의 크기설정이 자식태그인 <p>에도 딸려오기 때문에 따로 설정을 해주어야 한다.
+    #dynamic 태그에 display: inline-block을 설정해준다.  */
+}
+
+#dynamic.active::after {
+  display: none;
+  /* active가 있으면 bar가 사라지게 해준다. */
+}

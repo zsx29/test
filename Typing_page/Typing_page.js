@@ -41,7 +41,7 @@ dynamic(randemString());
 console.log(selectstring);
 console.log(selectstringArr);
 // 커서 깜빡임 효과
-function blink(params) {
+function blink() {
   target.classList.toggle("active");
 }
 setInterval(blink, 500);
