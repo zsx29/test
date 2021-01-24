@@ -1,0 +1,47 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+  /* eprspective가 크면 클수록 멀리보인다. */
+}
+
+.flip-btn {
+  width: 200px;
+  height: 100px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 100px;
+  /* line-height : 요쇼의 height 값과 line-height 값이 같으면 수직 중앙 정렬이 된다.
+  단, 텍스트가 한 줄 일때만 가능하다*/
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.flip-btn:hover {
+  transform: rotateX(-90deg);
+}
+
+.front {
+  background-color: goldenrod;
+  height: 100px;
+  transform: translatez(50px);
+}
+
+.back {
+  background-color: darkgoldenrod;
+  height: 100px;
+  transform: rotateX(90deg) translateZ(150px);
+}
