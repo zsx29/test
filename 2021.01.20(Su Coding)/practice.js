@@ -14,6 +14,11 @@ function fruit(name, price) {
 }
 fruit("apple", 2000);
 // -----------------------------------------------
+function printplus(number1, number2, number3) {
+  console.log("총 합은" + number1 + number2 + number3 + "입니다.");
+}
+printplus(1, 100, 1000);
+// -----------------------------------------------
 function Cafee682(arr) {
   console.log(arr[0] + "는" + arr[1] + "입니다.");
 }
@@ -47,11 +52,6 @@ function return11() {
   console.log("return실행 후");
 }
 return11();
-// -----------------------------------------------
-function printplus(number1, number2, number3) {
-  console.log("총 합은" + number1 + number2 + number3 + "입니다.");
-}
-printplus(1, 100, 1000);
 // -----------------------------------------------
 function printminus(number1, number2, number3) {
   return number1 - number2 - number3;
