@@ -1,0 +1,30 @@
+.top {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.mid {
+  background-color: yellow;
+  height: 100px;
+}
+
+.bot {
+  background-color: blue;
+  height: 100px;
+}
+
+.hello {
+  background-color: red;
+  height: 100px;
+}
+
+.world {
+  background-color: yellow;
+  height: 100px;
+}
+
+.goodmorning {
+  background-color: blue;
+  height: 100px;
+}
