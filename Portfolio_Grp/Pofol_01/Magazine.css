@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #485861;
+  color: #ffe6cf;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 1.4;
+  font-size: 500;
+  overflow-x: hidden;
+  /* overflow: hidden; : 스크롤 사용을 하지 않는다 */
+  /* overflow-x: ;: hidden; : 가로축 스크롤 사용을 하지 않는다 */
+  /* overflow-y: ;: hidden; : 세로축 스크롤 사용을 하지 않는다 */
+}
+
+.text-area {
+  margin-top: 90px;
+  margin-left: 24px;
+}
+
+.text-area h1 {
+  font-size: 30px;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 22px;
+}
+
+.text-area h1 .hearline {
+  width: 46px;
+  height: 1px;
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  background-color: #ffe6cf;
+  opacity: 0.5;
+}
+
+.volume {
+  margin-bottom: 85px;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+#circle-wrapper {
+  position: relative;
+  margin-top: 42px;
+  margin-left: 24px;
+}
+
+.circle {
+  width: 246px;
+  height: 246px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle:nth-child(1) {
+  /* 투명 */
+  background-color: transparent;
+  border: 2px solid #000;
+  opacity: 0.2;
+  box-sizing: border-box;
+}
+
+.circle:nth-child(2) {
+  background-color: #ffc000;
+  left: 82px;
+}
+
+.circle:nth-child(3) {
+  background-color: #fedd15;
+  left: 168px;
+  transition: 1s;
+  top: 0;
+}
+
+.circle:nth-child(3):hover {
+  background-color: red;
+  top: -20px;
+}
+
+.circle:nth-child(3):active {
+  background-color: royalblue;
+}
+
+#badge-area {
+  background-color: #ffc000;
+  width: 64px;
+  height: 64px;
+  color: #485861;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 24px;
+  padding-top: 19px;
+  padding-left: 11px;
+  line-height: 11px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 24px;
+}
+
+/* position */

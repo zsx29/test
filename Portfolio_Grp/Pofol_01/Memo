@@ -1,0 +1,12 @@
+<<Position>>
+Position : realtive;
+상대적으로 left, top의 위치를 이동시킬 수 있다.
+
+Position : realtive;
+좌표가 부모에의해 가로막히지만 않는다면 문서상의 첫 좌표에서 시작을 한다.
+
+<<display>>
+<div> 태그는 기본적으로 block 속성을 가진다.
+<span> 태그는 기본적으로 inline 속성을 가진다.
+inline상태에서는 margin-top, margin-bottom 적용이 되지 않는다.
+inline-block : block에서 적용할 수 있는 속성들을 사용할 수 있지만 inline형태를 가진다.
