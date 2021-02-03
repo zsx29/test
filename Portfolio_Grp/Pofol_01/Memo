@@ -10,3 +10,14 @@ Position : realtive;
 <span> 태그는 기본적으로 inline 속성을 가진다.
 inline상태에서는 margin-top, margin-bottom 적용이 되지 않는다.
 inline-block : block에서 적용할 수 있는 속성들을 사용할 수 있지만 inline형태를 가진다.
+
+<<display:flex>>
+
+디자인하는 남자
+9개월 전(수정됨)
+■ justify-content (flex 속성 안에서 가로정렬 부분)
+- center : 가운데 정렬
+- flex-end : 우축 정렬
+- space-between : 아이템들 간에 간격을 가진 채로 정렬
+
+■ align-items (flex 속성 안에서 세로정렬 부분)

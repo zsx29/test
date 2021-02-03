@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #485861;
+  color: #ffe6cf;
+  font-family: "Montserrat Alternates", sans-serif;
+  line-height: 1.4;
+  font-size: 500;
+  overflow-x: hidden;
+  margin: 0;
+  /* overflow: hidden; : 스크롤 사용을 하지 않는다 */
+  /* overflow-x: ;: hidden; : 가로축 스크롤 사용을 하지 않는다 */
+  /* overflow-y: ;: hidden; : 세로축 스크롤 사용을 하지 않는다 */
+}
+
+h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
