@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1e26;
+  color: #aebbbb;
+  font-family: "Roboto Mono", monospace;
+}
+/* 상단 */
+header {
+  width: 100%;
+  height: 126px;
+  position: fixed;
+  background-color: #1c1e26;
+  top: 0;
+  left: 0;
+}
+
+header .nav {
+  width: 90%;
+  height: 126px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #269a8c;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list .item {
+  padding: 10px;
+}
+
+/* 중단 */
+main {
+  width: 100%;
+  height: 826px;
+  margin-top: 126px;
+  position: relative;
+}
+
+main .backcolor {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.25fr 2fr;
+}
+
+main .backcolor :nth-child(1) {
+  background-color: #21242c;
+}
+
+main .backcolor :nth-child(2) {
+  background-color: #1c1e26;
+}
+
+main .background {
+  width: 100%;
+  height: 641px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .background .box {
+  width: 375px;
+  height: 525px;
+  background-color: #30343f;
+  text-align: center;
+}
+
+main .background .top-box {
+  width: 100%;
+  height: 477px;
+  padding: 50px;
+  padding-top: 60px;
+}
+
+main .top-box .img {
+  width: 180px;
+  height: 180px;
+  background-image: url(./img/JH.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+main .top-box .name {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+main .top-box .bar {
+  width: 120px;
+  height: 1.5px;
+  background-color: #f9aa33;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+main .background .under-box {
+  width: 100%;
+  height: 48px;
+  background-color: #f9aa33;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .background .under-box a {
+  color: #1c1e26;
+}
+
+main .background .text-area {
+  width: 650px;
+  height: 525px;
+  padding: 30px;
+  text-align: left;
+  display: inline-block;
+}
+
+main .background .text-area h1 {
+  font-size: 120px;
+  margin-bottom: 10px;
+}
+
+main .background .text-area .intro {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+main .background .text-area a {
+  width: 100px;
+  height: 100px;
+  background-color: #f9aa33;
+  border-radius: 30px;
+}
+/* 공통 */
+a {
+  text-decoration: none;
+  color: #b24847;
+}
+
+li {
+  list-style: none;
+}
