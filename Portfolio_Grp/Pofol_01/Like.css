@@ -2,6 +2,7 @@
 .search {
   margin: 20px;
   position: relative;
+  animation: slidedown 0.75s both;
 }
 
 .search form {
@@ -11,7 +12,7 @@
 .search .search-field {
   width: 100%;
   flex-shrink: 0;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .search .search-field:focus {
@@ -42,6 +43,7 @@
   margin: 24px;
   margin-top: 124px;
   margin-bottom: 12px;
+  animation: showtext 0.35s both;
 }
 
 .text-area .desc {

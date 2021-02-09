@@ -17,6 +17,9 @@
   opacity: 0.5;
 }
 
+.desc {
+}
+
 .volume {
   margin-bottom: 85px;
 }
@@ -36,18 +39,21 @@
   height: 246px;
   border-radius: 50%;
   position: absolute;
+  animation: circleshow 1s both;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .circle:nth-child(1) {
   /* 투명 */
   background-color: transparent;
-  border: 2px solid #000;
-  opacity: 0.2;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  animation-delay: 0s;
 }
 
 .circle:nth-child(2) {
   background-color: #ffc000;
   left: 82px;
+  animation-delay: 0.2s;
 }
 
 .circle:nth-child(3) {
@@ -55,15 +61,12 @@
   left: 168px;
   transition: 1s;
   top: 0;
+  animation-delay: 0.4s;
 }
 
 .circle:nth-child(3):hover {
   background-color: red;
   top: -20px;
-}
-
-.circle:nth-child(3):active {
-  background-color: royalblue;
 }
 
 #badge-area {
@@ -81,4 +84,6 @@
   position: fixed;
   top: 0;
   right: 24px;
+  animation: slidedown 0.5s both;
+  animation-delay: 0.5s;
 }

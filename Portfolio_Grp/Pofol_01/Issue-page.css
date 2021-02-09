@@ -1,0 +1,49 @@
+body {
+  padding: 24px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #485861;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .heart {
+  animation: slidedown 0.5s both;
+  animation-delay: 0.3s;
+}
+.text-area {
+  margin-top: 192px;
+}
+
+.title {
+  margin-bottom: 12px;
+  animation: showtext 0.35s both;
+}
+
+.desc {
+  animation: showtext 0.35s both;
+}
+
+.line {
+  width: 32px;
+  height: 1px;
+  border-bottom: 1px solid #ffe6cf;
+  margin: 32px 0;
+  opacity: 0.3;
+}
+
+.content {
+  font-size: 16px;
+  font-weight: normal;
+}
+sup {
+  font-size: 10px;
+}

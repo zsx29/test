@@ -1,0 +1,120 @@
+/* 아래에서 위로 나타내는 애니메이션 */
+@keyframes showtext {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+    color: aqua;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* 오른쪽에서 제자리로 나타나는 애니메이션 */
+@keyframes showitemfromright {
+  from {
+    opacity: 0;
+    transform: translateX(30px) scaleX(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* 위에서 아래로 나타내는 애니메이션 */
+@keyframes slidedown {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes circleshow {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+    background-color: aqua;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sizeup {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showpopup {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.stagger-item {
+  animation-duration: 0.5s;
+  animation-name: showtext;
+  animation-fill-mode: both;
+}
+
+.stagger-item:nth-child(1) {
+  animation-delay: 0.07s;
+}
+.stagger-item:nth-child(2) {
+  animation-delay: 0.14s;
+}
+.stagger-item:nth-child(3) {
+  animation-delay: 0.21s;
+}
+.stagger-item:nth-child(4) {
+  animation-delay: 0.28s;
+}
+.stagger-item:nth-child(5) {
+  animation-delay: 0.35s;
+}
+.stagger-item:nth-child(6) {
+  animation-delay: 0.42s;
+}
+
+.stagger.right {
+  animation: showitemfromright;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.stagger.right:nth-child(1) {
+  animation-delay: 0.07s;
+}
+.stagger.right:nth-child(2) {
+  animation-delay: 0.14s;
+}
+.stagger.right:nth-child(3) {
+  animation-delay: 0.21s;
+}

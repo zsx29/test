@@ -13,6 +13,8 @@
   position: absolute;
   top: 30px;
   right: 26px;
+  animation: slidedown 0.5s both;
+  animation-delay: 0.3s;
 }
 
 .text-area {
@@ -23,8 +25,12 @@
 
 .text-area .title {
   margin-bottom: 12px;
+  animation: showtext 0.35s both;
 }
 
+.text-area .desc {
+  animation: showtext 0.35s both;
+}
 sup {
   font-size: 10px;
 }

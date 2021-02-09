@@ -11,51 +11,112 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .modal-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-inner {
+        width: calc(100% - 48px);
+        background-color: #3d4a54;
+        border-radius: 12px;
+        overflow: hidden;
+        animation: showpopup 0.75s both;
+        animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      .modal-inner .thumb {
+        height: 234px;
+        background-image: url(./img/likes-3.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .modal-inner .title {
+        font-size: 24px;
+      }
+
+      .modal-inner .desc {
+        font-size: 12px;
+        line-height: 19px;
+        margin-top: 4px;
+      }
+
+      .modal-inner button {
+        padding: 10px 20px;
+        border: 1px solid rgba(225, 230, 207, 0.28);
+        font-size: 16px;
+        border-radius: 4px;
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+      }
+
+      .bottom-info {
+        height: 212px;
+        padding: 24px;
+        position: relative;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        animation: fadein 0.5s both;
+      }
+    </style>
   </head>
   <body>
     <!-- 상단 -->
     <header>
       <div class="jaehyeong-wrapper">
-        <a href="My-modal.html"
-          ><img class="jaehyeong" src="./img/user-thumb.png" alt="이미지"
-        /></a>
+        <img class="jaehyeong" src="./img/user-thumb.png" alt="이미지" />
         <div class="badge">7</div>
       </div>
       <div class="text-area">
-        <h2 class="greeting stagger-item">HI, Park jaehyeong</h2>
-        <div class="desc stagger-item">
+        <h2 class="greeting">HI, Park jaehyeong</h2>
+        <div class="desc">
           We'll make a mobile magazine app<br />
           using html, css only.
         </div>
         <a href="https://www.instagram.com/jaehye0ng2/" target="blank">
-          <div class="instagram mouse-effect stagger-item">jaehye0ng2</div>
+          <div class="instagram mouse-effect">jaehye0ng2</div>
         </a>
       </div>
     </header>
     <!-- 하단 -->
     <ul class="list">
-      <li class="item mouse-effect stagger-item">
+      <li class="item mouse-effect">
         <div class="left">
           <img src="./img/icon/bookmark.svg" alt="" />
           <div class="mid">Bookmark</div>
         </div>
         <div class="right"><img src="./img/icon/right_arrow.svg" alt="" /></div>
       </li>
-      <li class="item mouse-effect stagger-item">
+      <li class="item mouse-effect">
         <div class="left">
           <img src="./img/icon/account.svg" alt="" />
           <div class="mid">Account</div>
         </div>
         <div class="right"><img src="./img/icon/right_arrow.svg" alt="" /></div>
       </li>
-      <li class="item mouse-effect stagger-item">
+      <li class="item mouse-effect">
         <div class="left">
           <img src="./img/icon/business.svg" alt="" />
           <div class="mid">Business</div>
         </div>
         <div class="right"><img src="./img/icon/right_arrow.svg" alt="" /></div>
       </li>
-      <li class="item mouse-effect stagger-item">
+      <li class="item mouse-effect">
         <div class="left">
           <img src="./img/icon/puzzle.svg" alt="" />
           <div class="mid">Blah blah</div>
@@ -78,5 +139,20 @@
         ><img src="./img/icon/more.svg"
       /></a>
     </nav>
+    <!-- 모달 -->
+    <div class="overlay"></div>
+    <div class="modal-wrapper">
+      <div class="modal-inner">
+        <div class="thumb"></div>
+        <div class="bottom-info">
+          <div class="title">Dear, junior developer.</div>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            temporibus neque, corporis a quasi illo.
+          </p>
+          <a href="My.html"><button>Close</button></a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

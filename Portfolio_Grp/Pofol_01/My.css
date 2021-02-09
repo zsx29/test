@@ -30,10 +30,13 @@ header .badge {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: sizeup 0.35s both;
+  animation-delay: 0.3s;
 }
 
 header .text-area {
   font-size: 12px;
+  animation: showtext 0.35s both;
 }
 
 header .greeting {
